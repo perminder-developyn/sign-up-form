@@ -103,6 +103,7 @@ li{
       font-size: .7rem;
       justify-content: center;
       padding-bottom: 2rem;
+      text-align: center;
   }
 
   .fn-error-symbol, 
@@ -130,16 +131,56 @@ li{
    font-style: italic;
   }
 
-  @media only screen and (max-width: 1220px) {
-    .content{
-        flex-direction: column;
-    }
-    .heading{
-        text-align: center;
-    }
-    .sub-header,
-    .main-header{
-        margin: 0;
-        max-width: fit-content;
-    }
+  @media only screen and (max-width: 1207px) {
+  
+   .content{
+       padding-top: 0;
+       transform: translateY(-2rem);
+   }
+   .heading{
+       text-align: center;
+   }
+   .form-container{
+    transform: translateY(-5rem);
+   }
+   .main-header{
+       padding-left: 31.26px;
+   }
+  }
+
+
+  @media only screen and (max-width: 620px) {
+      .heading{
+          min-width: fit-content;
+      }
+     .form-container{
+         min-width: 370px;
+     }
+      .main-header{
+          font-size: 2rem;
+          padding-left: 0;
+      }
+      .sub-header{
+          font-size: 1.2rem;
+      }
+      .content{
+          max-width: fit-content;
+      }
+      .form-input{
+          border-radius: 15px;
+      }
+      .trail{
+          padding: 1.5rem 5rem 1.5rem 5rem;
+          font-size: large;
+      }
+      .t-c{
+          padding-left: 1rem;
+          padding-right: 1rem;
+      }
+      .terms{
+          width: 250px;
+      }
+      ul{
+          transform: translateX(-1vw);
+      }
   }
