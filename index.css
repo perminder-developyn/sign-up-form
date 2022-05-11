@@ -39,11 +39,11 @@ body {
  min-width: 500px;
 }
 
-.trail{
+.trail {
  background: hsl(248, 32%, 49%);
  box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.2)
 }
-.claim{
+.claim {
 background: hsl(154, 59%, 51%);
 text-transform: uppercase;
 font-weight: 700;
@@ -51,38 +51,38 @@ box-shadow: 0 4px 0 0 hsl(154, 59%, 42%);
 width: 91.3%;
 }
 
-button{
+button {
     width: 100%;
     color: white;
     border: none;
     border-radius: 10px;
     padding: 1rem;
 }
-button:hover{
+button:hover {
     cursor: pointer;
     opacity: .8;
 
 }
-.form-input{
+.form-input {
  background: white;
  border-radius: 5px;
  box-shadow: 0 8px 0 0 rgba(0, 0, 0, 0.1)
 }
-ul{
+ul {
     padding-top: 2rem;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
 }
-li{
+li {
     list-style-type: none;
     padding-bottom: 1rem;
   }
-  input:focus{
+  input:focus {
     border: 1px solid rgb(0, 0, 0);
       outline: none;
   }
-  input{
+  input {
      border-radius: 4px;
      border: 1px solid hsl(246, 25%, 77%); 
      padding: 1rem;
@@ -91,14 +91,14 @@ li{
      font-family: 'Poppins';
   }
 
-  .terms{
+  .terms {
       color: hsl(246, 25%, 77%);
   }
-  .conditions{
+  .conditions {
     color:hsl(0, 100%, 74%);
     font-weight: 600;
   }
-  .t-c{
+  .t-c {
       display: flex;
       font-size: .7rem;
       justify-content: center;
@@ -109,14 +109,14 @@ li{
   .fn-error-symbol, 
   .ln-error-symbol, 
   .email-error-symbol, 
-  .password-error-symbol{
+  .password-error-symbol {
       float: right;
       transform: translateX(-70px) translateY(-55px);
   }
   .fn-error,
   .ln-error,
   .email-error,
-  .password-error{
+  .password-error {
       display: none;
    text-align: right; 
     max-height: 25px;
@@ -124,7 +124,7 @@ li{
   .fn-error-msg,
   .ln-error-msg,
   .email-error-msg,
-  .password-error-msg{
+  .password-error-msg {
    transform: translateX(-25px) translateY(-20px);
    font-size: .75rem;
    color:hsl(0, 100%, 74%);
@@ -133,54 +133,54 @@ li{
 
   @media only screen and (max-width: 1207px) {
   
-   .content{
+   .content {
        padding-top: 0;
        transform: translateY(-2rem);
    }
-   .heading{
+   .heading {
        text-align: center;
    }
-   .form-container{
+   .form-container {
     transform: translateY(-5rem);
    }
-   .main-header{
+   .main-header {
        padding-left: 31.26px;
    }
   }
 
 
   @media only screen and (max-width: 620px) {
-      .heading{
+      .heading {
           min-width: fit-content;
       }
-     .form-container{
+     .form-container {
          min-width: 370px;
      }
-      .main-header{
+      .main-header {
           font-size: 2rem;
           padding-left: 0;
       }
-      .sub-header{
+      .sub-header {
           font-size: 1.2rem;
       }
-      .content{
+      .content {
           max-width: fit-content;
       }
-      .form-input{
+      .form-input {
           border-radius: 15px;
       }
-      .trail{
+      .trail {
           padding: 1.5rem 5rem 1.5rem 5rem;
           font-size: large;
       }
-      .t-c{
+      .t-c {
           padding-left: 1rem;
           padding-right: 1rem;
       }
-      .terms{
+      .terms {
           width: 250px;
       }
-      ul{
+      ul {
           transform: translateX(-1vw);
       }
   }
