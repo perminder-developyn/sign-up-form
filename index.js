@@ -7,19 +7,26 @@ const password = document.getElementById('password');
 
 
 function validate(){
+    form.addEventListener("click", clear);
+    function clear(){
+        document.querySelector('#fn-error').style.display = "none";
+        document.querySelector('#ln-error').style.display = "none";
+        document.querySelector('#email-error').style.display = "none";
+        document.querySelector('#password-error').style.display = "none";
+    }
    
-if(firstName.innerHTML === ''){
+if(firstName.value === ""){
     document.querySelector('#fn-error').style.display = "block";
 }
-if(lastName.innerHTML === ''){
+if(lastName.value === ""){
     document.querySelector('#ln-error').style.display = "block";
 }
-if(email.innerHTML === ''){
+if(email.value === ""){
     document.querySelector('#email-error').style.display = "block";
 }
-if(password.innerHTML === ''){
+if(password.value === ""){
     document.querySelector('#password-error').style.display = "block";
 }
-console.log("hi")
+console.log(firstName.value)
 }
 

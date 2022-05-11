@@ -15,7 +15,6 @@ body {
 
 .attribution { 
     bottom: 0;
-    position: fixed;
     font-size: 11px; text-align: center; 
 }
 .attribution a { 
@@ -130,4 +129,17 @@ li{
    color:hsl(0, 100%, 74%);
    font-style: italic;
   }
- 
+
+  @media only screen and (max-width: 1220px) {
+    .content{
+        flex-direction: column;
+    }
+    .heading{
+        text-align: center;
+    }
+    .sub-header,
+    .main-header{
+        margin: 0;
+        max-width: fit-content;
+    }
+  }
