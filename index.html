@@ -7,10 +7,12 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="index.css">
   <title>Frontend Mentor | Intro component with sign up form</title>
+  
 
-
+  <script type="text/javascript" src="index.js"></script>
 </head>
 <body>
+  
   <div class="content">
  <div class="heading">
  <h1 class="main-header">Learn to code by watching others</h1>
@@ -22,21 +24,36 @@
    <button class="trail">
     <strong>Try it free 7 days</strong> then $20/mo. thereafter
    </button>
-   <form class="form-input" action="/" method="post">
+   <form name ="inputForm" id="form" class="form-input" action="javascript:void(0)" onsubmit="return validate()">
     <ul>
      <li>
-      
-       <input type="text" id="first_name" name="first_name" placeholder="First Name">
+       <input type="text" id="first_name" name="first_name" placeholder="First Name" >
      </li>
+     <div class="fn-error" id="fn-error">
+       <img class="fn-error-symbol" src="./images/icon-error.svg"/>
+       <p class="fn-error-msg">First Name cannot be empty</p>
+      </div> 
      <li>
-      <input type="text" id="last_name" name="last_name" placeholder="Last Name">
+      <input type="text" id="last_name" name="last_name" placeholder="Last Name" >
     </li>
+    <div class="ln-error" id="ln-error">
+      <img class="ln-error-symbol" src="./images/icon-error.svg"/>
+      <p class="ln-error-msg">Last Name cannot be empty</p>
+    </div>
      <li>
-       <input type="email" id="mail" name="user_email" placeholder="Email Address">
+       <input type="email" id="mail" name="user_email" placeholder="Email Address" >
      </li>
+     <div class="email-error" id="email-error">
+      <img class="email-error-symbol" src="./images/icon-error.svg"/>
+      <p class="email-error-msg">Looks like this is not an email</p>
+     </div>
      <li>
-      <input type="password" id="password" name="password" placeholder="Password">
+      <input type="password" id="password" name="password" placeholder="Password" >
      </li>
+     <div class="password-error" id="password-error">
+      <img class="password-error-symbol" src="./images/icon-error.svg"/>
+      <p class="password-error-msg">Password cannot be empty</p>
+     </div>
      <button class="claim" type="submit">Claim your free trial </button>
     </ul>
     <div class="t-c">
